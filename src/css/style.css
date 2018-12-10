@@ -1,3 +1,4 @@
+/* Standard Styles */
 * {
     margin: 0;
     padding: 0;
@@ -14,4 +15,52 @@ body, html {
 body {
     margin-left: 3em;
     margin-right: 3em;
+}
+
+a {
+    transition-duration: 0.2s;
+    text-decoration: none;
+    color: #2377BE;
+}
+
+a:hover {
+    color: #548EBE;
+}
+
+/* Header */
+.header {
+    border-bottom: 1px rgba(194, 194, 194, 0.5) solid;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header h1 {
+    font-weight: 900;
+    font-size: 3em;
+}
+
+.header .links {
+    margin-top: 10px;
+}
+
+.header .links a {
+    width: auto;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-right: 15px;
+}
+
+/* Content */
+.content {
+    overflow-y: auto;
+}
+
+/* Footer */
+.footer {
+
 }
