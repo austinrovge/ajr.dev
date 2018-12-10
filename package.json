@@ -2,18 +2,16 @@
   "name": "austinrovge.me",
   "version": "0.0.1",
   "description": "This project is a website built using ReactJS and Node.js.",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/austinrovge/austinrovge.me.git"
-  },
-  "dependencies": {
-
-  },
-  "devDependencies": {
-
-  },
-  "scripts": {
-
   },
   "author": "Austin Rovge",
   "license": "MIT"
