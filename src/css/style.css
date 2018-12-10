@@ -69,6 +69,17 @@ a:hover {
     padding-bottom: 15px;
 }
 
+/* Content > About */
+.content .austin-photo {
+    margin-bottom: 20px;
+    margin-left: 5px;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 365px;
+    float: right;
+    align-self: center;
+}
+
 /* Content > Projects */
 .content .projects {
     display: flex;
