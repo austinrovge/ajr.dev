@@ -3,12 +3,15 @@
   "version": "0.0.1",
   "description": "This project is a website built using ReactJS and Node.js.",
   "scripts": {
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "build-dev": "webpack --mode development --config ./util/webpack.config.js"
   },
   "dependencies": {
     "express": "^4.16.4",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
   },
   "devDependencies": {},
   "repository": {
