@@ -130,5 +130,24 @@ a:hover {
 
 /* Footer */
 .footer {
+    background-color: #fff;
+    padding-bottom: 25px;
+    width: 12em;
+    bottom: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    left: 0;
+    margin-right: auto;
+    margin-top: 20px;
+}
 
+.footer a {
+    transition-duration: 0.2s;
+    fill: rgba(0, 0, 0, 0.3);
+}
+
+.footer a:hover {
+    fill: rgba(0, 0, 0, 0.5);
 }
