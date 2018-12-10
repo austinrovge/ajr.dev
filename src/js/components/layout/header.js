@@ -7,7 +7,7 @@ export default class Header extends Component {
             <div className="header">
                 <h1>Austin Rovge</h1>
                 <div className="links">
-                    <Link to="/">Home</Link>
+                    <Link to="/">About</Link>
                     <Link to="/projects">Projects</Link>
                 </div>
             </div>
