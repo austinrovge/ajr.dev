@@ -32,7 +32,7 @@ a:hover {
     border-bottom: 1px rgba(194, 194, 194, 0.5) solid;
     padding-top: 25px;
     padding-bottom: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -58,6 +58,15 @@ a:hover {
 /* Content */
 .content {
     overflow-y: auto;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1em;
+    padding-bottom: 15px;
 }
 
 /* Footer */
