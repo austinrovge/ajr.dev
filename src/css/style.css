@@ -69,6 +69,58 @@ a:hover {
     padding-bottom: 15px;
 }
 
+/* Content > Projects */
+.content .projects {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 715px;
+}
+
+.content .projects .project {
+    height: auto;
+    margin-right: 1em;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 0.9em;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 715px;
+}
+
+.content .projects .project .language {
+    float: right;
+    text-align: right;
+}
+
+.content .projects .project .language .text {
+    margin-left: 5px;
+}
+
+.content .projects .project .language .indicator {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+}
+
+.content .projects .project .language .indicator.python { background-color: #3572A5; }
+
+.content .projects .project .language .indicator.java { background-color: #B07219; }
+
+.content .projects .project .language .indicator.javascript { background-color: #F1E05A; }
+
+.content .projects .project a {
+    font-weight: 900;
+    font-size: 1.5em;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
 /* Footer */
 .footer {
 
