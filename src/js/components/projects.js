@@ -1,10 +1,12 @@
-import { Component } from "react";
-import React from "react";
+import React, { Component } from 'react';
+import Content from './layout/content';
 
 export default class Projects extends Component {
     render() {
         return (
-            <h1>Here are my projects</h1>
+            <Content>
+                <h1>Here are my projects</h1>
+            </Content>
         )
     }
 }

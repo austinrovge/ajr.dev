@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Content from './layout/content'
 
-const Home = () => (
-    <h1>Hello world!</h1>
-)
-
-export default Home
+export default class Home extends Component {
+    render() {
+        return (
+            <Content>
+                <h1>Hello world!</h1>
+            </Content>
+        )
+    }
+}
