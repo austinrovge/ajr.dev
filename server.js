@@ -4,6 +4,7 @@ const app = express();
 const PORT = 8080;
 
 app.use(express.static(path.join(__dirname, '/src')));
+app.use('/favicon.ico', express.static(path.join(__dirname, '/src/assets/favicon.ico')))
 
 app.get('*', function(req, res) {
     res.sendFile(path.join(__dirname + '/src/index.html'));
