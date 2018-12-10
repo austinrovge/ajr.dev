@@ -1,26 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { render } from 'react-dom';
-
-const Home = () => (
-    <h1>Hello world!</h1>
-)
-
-class Projects extends Component {
-    render() {
-        return (
-            <h1>Here are my projects</h1>
-        )
-    }
-}
-
-class NotFound extends Component {
-    render() {
-        return (
-            <h1>404 Not Found</h1>
-        )
-    }
-}
+import Home from './components/home';
+import Projects from './components/projects';
+import NotFound from './components/not-found';
 
 render((
     <Router>
