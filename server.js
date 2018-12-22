@@ -1,15 +1,16 @@
-const path = require('path');
-const express = require('express');
-const app = express();
-const PORT = 8080;
+import path from 'path'
+import express from 'express'
 
-app.use(express.static(path.join(__dirname, '/src')));
-app.use('/favicon.ico', express.static(path.join(__dirname, '/src/assets/favicon.ico')))
+const app = express()
+const PORT = 8080
 
-app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname + '/src/index.html'));
-});
+app.use(express.static(path.join(__dirname, 'src')))
+app.use('/favicon.ico', express.static(path.join(__dirname, 'src', 'assets', 'favicon.ico')))
 
-app.listen(PORT, function() {
-   console.log(`Server listening on port: ${PORT}`);
-});
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'src', 'index.html'))
+})
+
+app.listen(PORT, () => {
+   console.log(`Server listening on port: ${PORT}`)
+})
