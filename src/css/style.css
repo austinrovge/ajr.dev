@@ -158,16 +158,16 @@ a:hover {
 /* Footer */
 .footer {
     background-color: #fff;
-    padding-bottom: 25px;
     width: 12em;
-    bottom: 0;
     position: relative;
     display: flex;
     justify-content: space-around;
-    text-align: left;
     left: 0;
-    margin-right: auto;
     margin-top: 20px;
+}
+
+.footer .mail {
+    margin-top: 5px;
 }
 
 .footer a {
