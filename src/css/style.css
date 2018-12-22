@@ -70,7 +70,7 @@ a:hover {
 }
 
 /* Content > About */
-.content .austin-photo {
+.content .photo-circle {
     margin-bottom: 20px;
     margin-left: 5px;
     border-radius: 50%;
@@ -151,7 +151,7 @@ a:hover {
 /* Content > Resume */
 .content object {
     width: 34em;
-    height: 46em;
+    height: 44em;
     border: 1px rgba(194, 194, 194, 0.5) solid;
 }
 

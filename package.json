@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "This project is a website built using ReactJS and Node.js.",
   "scripts": {
-    "local": "node server.js",
+    "local": "babel-watch server.js",
     "build-dev": "webpack --mode development --config ./util/webpack.config.js"
   },
   "dependencies": {
@@ -11,6 +11,7 @@
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "babel-watch": "^2.0.7",
     "express": "^4.16.4",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",

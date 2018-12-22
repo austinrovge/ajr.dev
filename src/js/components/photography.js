@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import Content from './layout/content';
+import React, { Component } from 'react'
+import Content from './layout/content'
 
 export default class Photography extends Component {
     render() {

@@ -6,7 +6,7 @@ export default class About extends Component {
         return (
             <Content>
                 <h1>Hi, I'm Austin.</h1>
-                <img className="austin-photo" src="/assets/austin.jpg" alt="A picture of me" />
+                <img className="photo-circle" src="/assets/austin.jpg" alt="A picture of me!" />
                 <div>
                     <p>I'm a college student who's working on learning more about programming.</p>
                     <p>I first started programming in middle school when I discovered the <a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">Codeacademy course on JavaScript</a>. Within an hour of starting the course, I was proudly showing my mom the basic for loops I made!</p>
