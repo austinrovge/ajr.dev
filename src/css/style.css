@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: "system-ui", sans-serif;
-    color: #000;
+    color: #212121;
 }
 
 body, html {
@@ -166,8 +166,8 @@ a:hover {
     margin-top: 20px;
 }
 
-.footer .mail {
-    margin-top: 5px;
+.footer .mail-icon {
+    margin-top: 3px;
 }
 
 .footer a {
