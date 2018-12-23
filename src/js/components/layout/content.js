@@ -7,9 +7,9 @@ export default class Content extends Component {
         return (
             <Fragment>
                 <Header />
-                <div className="content">
+                <main className="content">
                     {this.props.children}
-                </div>
+                </main>
                 <Footer />
             </Fragment>
         )

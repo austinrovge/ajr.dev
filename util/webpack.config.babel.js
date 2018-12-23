@@ -1,7 +1,7 @@
-const path = require('path');
+import path from 'path'
 
-module.exports = {
-    entry: './src/js/index.js',
+export default {
+    entry: path.resolve('src', 'js'),
     output: {
         path: path.join(__dirname, '..', 'src', 'js'),
         filename: 'app.js'
@@ -17,4 +17,4 @@ module.exports = {
             }
         ]
     }
-};
+}
