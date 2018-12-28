@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Content from './layout/content'
+import Content from '../components/content'
 
 export default class Projects extends Component {
     render() {
@@ -9,7 +9,7 @@ export default class Projects extends Component {
                 <p>This isn't all of my projects that I've worked on, just some that I like!</p>
                 <div className="projects">
                     <div className="project">
-                        <a href="https://github.com/austinrovge/austinrovge.me">austinrovge.me</a>
+                        <a rel="noopener noreferrer" href="https://github.com/austinrovge/austinrovge.me">austinrovge.me</a>
                         <span className="language">
                             <span className="indicator javascript" />
                             <span className="text">JavaScript</span>
@@ -17,7 +17,7 @@ export default class Projects extends Component {
                         <p>This project is a website built using ReactJS and Node.js.</p>
                     </div>
                     <div className="project">
-                        <a href="https://github.com/austinrovge/pathfinder">pathfinder</a>
+                        <a rel="noopener noreferrer" href="https://github.com/austinrovge/pathfinder">pathfinder</a>
                         <span className="language">
                             <span className="indicator java" />
                             <span className="text">Java</span>

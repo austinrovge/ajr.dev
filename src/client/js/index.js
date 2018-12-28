@@ -1,11 +1,11 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import { render } from 'react-dom'
-import About from './components/about'
-import Projects from './components/projects'
-import Resume from './components/resume'
-import Photography from './components/photography'
-import NotFound from './components/not-found'
+import About from './pages/about'
+import Projects from './pages/projects'
+import Resume from './pages/resume'
+import Photography from './pages/photography'
+import NotFound from './pages/not-found'
 
 render((
     <Router>

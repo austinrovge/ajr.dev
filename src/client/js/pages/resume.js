@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Content from './layout/content'
+import Content from '../components/content'
 
 export default class Resume extends Component {
     render() {
