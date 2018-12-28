@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "This project is a website built using ReactJS and Node.js.",
   "scripts": {
-    "local": "babel-watch server.js",
+    "local": "babel-watch ./src/server/server.js",
     "build-dev": "webpack --mode development --config ./util/webpack.config.babel.js"
   },
   "dependencies": {

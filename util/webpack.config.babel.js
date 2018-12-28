@@ -1,9 +1,9 @@
 import path from 'path'
 
 export default {
-    entry: path.resolve('src', 'js'),
+    entry: path.resolve('src', 'client', 'js'),
     output: {
-        path: path.join(__dirname, '..', 'src', 'js'),
+        path: path.join(__dirname, '..', 'src', 'client', 'js'),
         filename: 'app.js'
     },
     module: {
