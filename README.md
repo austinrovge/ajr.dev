@@ -13,22 +13,20 @@ $ npm i -g
 ### Development
 #### Building
 
-The webpack configuration needs to build the compiled JS file before running the server.
+Gatsby will build a development version of the site and serve the files out by running:
 ``` bash
-$ npm run build-dev
+$ npm run dev
 ```
 
-#### Starting server
+#### Production
 
-The server can be started on port 8080 with the following command.
-``` bash
-$ npm run local
+A production build can be created using:
+```bash
+$ npm run build:prod
 ```
 
 ### Future Development
 * Dynamically add projects to project page
-* Use a static HTML generator to generate projects page
-* Build and run in production support
-* Add docker support/NGINX
-* Add SASS support
-* More photography content
+* Dynamically add pictures to the photography page, create albums
+* Add production serving
+* SASS support
