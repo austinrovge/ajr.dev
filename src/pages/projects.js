@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
@@ -26,8 +27,37 @@ export default class Projects extends Component {
                         </span>
                         <p>This is a JavaFX application that draws a map of rectangles out. The user is able to draw walls and set the start/end points. When run, the program will draw a path between the two points.</p>
                     </div>
+                    {
+                        this.props.data.allMarkdownRemark.edges.map((project, i) => (
+                            <div key={i} className="project">
+                                <a href={project.node.frontmatter.link}>{project.node.frontmatter.title}</a>
+                                <span className="language">
+                                    <span className={`indicator ${project.node.frontmatter.language.toLowerCase()}`} />
+                                    <span className="text">{project.node.frontmatter.language}</span>
+                                </span>
+                                <p>{project.node.excerpt}</p>
+                            </div>
+                        ))
+                    }
                 </div>
             </Layout>
         )
     }
 }
+
+export const projectsQuery = graphql`
+    query {
+        allMarkdownRemark {
+            edges {
+                node {
+                  excerpt(pruneLength:500)
+                  frontmatter {
+                    title
+                    language
+                    link
+                  }
+                }
+              }
+        }
+    }
+`
