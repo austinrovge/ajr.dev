@@ -10,7 +10,7 @@ export default class Index extends Component {
             <Layout>
                 <SEO title="About" />
                 <h1>Hi, I'm Austin.</h1>
-                <Img className="photo-circle" fluid={this.props.data.austin.childImageSharp.fluid} />
+                <Img className="photo-circle" alt={this.props.data.austin.name} fluid={this.props.data.austin.childImageSharp.fluid} />
                 <div>
                     <p>I'm a college student who's working on learning more about programming.</p>
                     <p>I first started programming in middle school when I discovered the <a href="https://www.codecademy.com/learn/introduction-to-javascript" rel="noopener noreferrer" target="_blank">Codeacademy course on JavaScript</a>. Within an hour of starting the course, I was proudly showing my mom the basic for loops I made!</p>
@@ -30,6 +30,7 @@ export const fluidImage = graphql`
           ...GatsbyImageSharpFluid
         }
       }
+      name
     }
 `
 

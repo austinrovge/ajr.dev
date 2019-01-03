@@ -14,7 +14,7 @@ export default class Photography extends Component {
                 <div className="photos">
                     {
                         this.props.data.photos.edges.map((photo, i) => (
-                            <Img key={i} className="photo" fluid={photo.node.childImageSharp.fluid} />
+                            <Img key={i} alt={photo.node.name} className="photo" fluid={photo.node.childImageSharp.fluid} />
                         ))
                     }
                 </div>
@@ -29,6 +29,7 @@ export const photoQuery = graphql`
             edges {
                 node {
                     ...fluidImage
+                    name
                 }
             }
         }
