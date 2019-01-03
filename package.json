@@ -7,6 +7,7 @@
     "url": "https://github.com/austinrovge/austinrovge.me.git"
   },
   "dependencies": {
+    "dotenv": "^6.2.0",
     "gatsby": "^2.0.75",
     "gatsby-image": "^2.0.20",
     "gatsby-plugin-manifest": "^2.0.9",
