@@ -1,29 +1,28 @@
 {
   "name": "austinrovge.me",
   "version": "0.0.1",
-  "description": "This project is a website built using ReactJS and Node.js.",
-  "scripts": {
-    "local": "babel-watch ./src/server/server.js",
-    "build-dev": "webpack --mode development --config ./util/webpack.config.babel.js"
-  },
-  "dependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "babel-watch": "^2.0.7",
-    "express": "^4.16.4",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-router-dom": "^4.3.1",
-    "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2"
-  },
-  "devDependencies": {},
+  "description": "My personal website, built using GatsbyJS.",
   "repository": {
     "type": "git",
     "url": "https://github.com/austinrovge/austinrovge.me.git"
+  },
+  "dependencies": {
+    "gatsby": "^2.0.75",
+    "gatsby-image": "^2.0.20",
+    "gatsby-plugin-manifest": "^2.0.9",
+    "gatsby-plugin-offline": "^2.0.16",
+    "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-sharp": "^2.0.14",
+    "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-transformer-sharp": "^2.1.8",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0"
+  },
+  "scripts": {
+    "dev": "gatsby develop",
+    "build:prod": "gatsby build"
   },
   "author": "Austin Rovge",
   "license": "MIT"
