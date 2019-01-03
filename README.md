@@ -1,5 +1,5 @@
 # austinrovge.me
-This project is a website built using ReactJS and Node.js.
+This project is my personal site that is built using GatsbyJS.
 
 ### Installation
 Install NPM modules.
