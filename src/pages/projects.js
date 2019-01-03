@@ -43,6 +43,21 @@ export default class Projects extends Component {
                             </div>
                         ))
                     }
+
+                    {
+                        this.props.data.github.user.repositories.edges.map((project, i) => (
+                            <div key={i} className="project">
+                                <a href={project.node.url}>{project.node.name}</a>
+                                <span className="language">
+                                    <span className={`indicator ${project.node.primaryLanguage.name.toLowerCase()}`} />
+                                    <span className="text">{project.node.primaryLanguage.name}</span>
+                                </span>
+                                <div>
+                                    <p>{project.node.description }</p>
+                                </div>
+                            </div>
+                        ))
+                    }
                 </div>
             </Layout>
         )
@@ -62,6 +77,24 @@ export const projectsQuery = graphql`
                   }
                 }
               }
+        }
+        
+        github {
+            user(login: "austinrovge") {
+                repositories(last:3) {
+                    totalCount
+                    edges {
+                        node {
+                            name
+                            description
+                            url
+                            primaryLanguage {
+                                name
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 `

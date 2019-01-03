@@ -123,11 +123,36 @@ a:hover {
   margin-left: 5px;
 }
 
-.content .projects .project .language .indicator.python { background-color: #3572A5; }
+/* Content > Projects > Languages */
+.content .projects .project .language .indicator.c { background-color: #555555; }
+
+.content .projects .project .language .indicator.csharp { background-color: #178600; }
+
+.content .projects .project .language .indicator.cplusplus { background-color: #F34B7D; }
+
+.content .projects .project .language .indicator.css { background-color: #563D7C; }
+
+.content .projects .project .language .indicator.dart { background-color: #00B4AB; }
+
+.content .projects .project .language .indicator.html { background-color: #E34C26; }
 
 .content .projects .project .language .indicator.java { background-color: #B07219; }
 
 .content .projects .project .language .indicator.javascript { background-color: #F1E05A; }
+
+.content .projects .project .language .indicator.kotlin { background-color: #F18E33; }
+
+.content .projects .project .language .indicator.python { background-color: #3572A5; }
+
+.content .projects .project .language .indicator.rust { background-color: #DEA584; }
+
+.content .projects .project .language .indicator.swift { background-color: #FFAC45; }
+
+.content .projects .project .language .indicator.typescript { background-color: #2B7489; }
+
+.content .projects .project .language .indicator.vue { background-color: #2C3E50; }
+
+.content .projects .project .language .indicator.webassembly { background-color: #04133B; }
 
 .content .projects .project a {
   font-weight: 900;
