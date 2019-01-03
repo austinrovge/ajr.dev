@@ -101,6 +101,10 @@ a:hover {
   max-width: 715px;
 }
 
+.content .projects .project p {
+  padding-bottom: 10px;
+}
+
 .content .projects .project .language {
   float: right;
   text-align: right;
