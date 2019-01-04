@@ -46,7 +46,7 @@ $ npm run serve
 * ~~Dynamically add projects to project page~~
 * ~~Dynamically add pictures to the photography page~~
 * Create pages for different photo albums
-* Add JSLint to the project
+* ~~Add JSLint to the project~~
 * Update gatsby-config
 * Update directories
 * Serve production files on port 80
