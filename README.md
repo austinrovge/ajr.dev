@@ -22,7 +22,7 @@ Make sure you don't commit the access token to a project repository or share it 
 The inside of the `.env.api` file should have one line like this:
 
 ```
-GITHUB_API_TOKEN=[YOUR API TOKEN GOES HERE]
+GITHUB_API_TOKEN=[YOUR API TOKEN GOES HERE WITHOUT THE BRACKETS]
 ```
 
 #### Development
