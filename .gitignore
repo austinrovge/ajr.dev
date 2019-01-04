@@ -17,6 +17,9 @@ node_modules/
 # dotenv environment variables file
 .env.api
 
+# Idea folder
+.idea
+
 # gatsby files
 .cache/
 public
