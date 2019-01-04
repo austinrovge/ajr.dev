@@ -25,7 +25,8 @@
   },
   "scripts": {
     "dev": "gatsby develop",
-    "build:prod": "gatsby build"
+    "build:prod": "gatsby build",
+    "serve": "gatsby serve"
   },
   "author": "Austin Rovge",
   "license": "MIT"

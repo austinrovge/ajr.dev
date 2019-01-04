@@ -24,7 +24,7 @@ module.exports = {
         fieldName: 'github',
         url: 'https://api.github.com/graphql',
         headers: {
-          Authorization: `bearer ${process.env.GITHUB_API_KEY}`
+          Authorization: `bearer ${process.env.GITHUB_API_TOKEN}`
         }
         // refetchInterval: 60
       }
