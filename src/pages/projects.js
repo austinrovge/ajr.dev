@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
+import Project from '../components/project'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 export default class Projects extends Component {
+    validateLanguage(language) {
+        return language !== null ? language.name : ''
+    }
+
     render() {
         return (
             <Layout>
@@ -13,28 +18,22 @@ export default class Projects extends Component {
                 <div className="projects">
                     {
                         this.props.data.github.user.pinnedRepositories.edges.map((project, i) => (
-                            <div key={i} className="project">
-                                <a href={project.node.url}>{project.node.name}</a>
-                                <span className="language">
-                                    <span className={`indicator ${project.node.primaryLanguage.name.toLowerCase()}`}/>
-                                    <span className="text">{project.node.primaryLanguage.name}</span>
-                                </span>
-                                <div>
-                                    <p>{project.node.description}</p>
-                                </div>
-                            </div>
+                            <Project key={i}
+                                     url={project.node.url}
+                                     name={project.node.name}
+                                     language={this.validateLanguage(project.node.primaryLanguage)}
+                                     description={project.node.description}
+                            />
                         ))
                     }
                     {
                         this.props.data.allMarkdownRemark.edges.map((project, i) => (
-                            <div key={i} className="project">
-                                <a href={project.node.frontmatter.link}>{project.node.frontmatter.title}</a>
-                                <span className="language">
-                                    <span className={`indicator ${project.node.frontmatter.language.toLowerCase()}`} />
-                                    <span className="text">{project.node.frontmatter.language}</span>
-                                </span>
-                                <div dangerouslySetInnerHTML={{ __html: project.node.html }} />
-                            </div>
+                            <Project key={i}
+                                     url={project.node.frontmatter.link}
+                                     name={project.node.frontmatter.title}
+                                     language={project.node.frontmatter.language}
+                                     description={project.node.excerpt}
+                            />
                         ))
                     }
                 </div>
@@ -48,7 +47,7 @@ export const projectsQuery = graphql`
         allMarkdownRemark {
             edges {
                 node {
-                  html
+                  excerpt(pruneLength: 500)
                   frontmatter {
                     title
                     language
@@ -60,7 +59,7 @@ export const projectsQuery = graphql`
         
         github {
             user(login: "austinrovge") {
-                pinnedRepositories(last:3) {
+                pinnedRepositories(first: 6) {
                     totalCount
                     edges {
                         node {
