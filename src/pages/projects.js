@@ -32,7 +32,7 @@ export default class Projects extends Component {
 								url={project.node.frontmatter.link}
 								name={project.node.frontmatter.title}
 								language={project.node.frontmatter.language}
-								description={project.node.excerpt}
+								description={project.node.rawMarkdownBody}
 							/>
 						))
 					}
@@ -47,7 +47,7 @@ export const projectsQuery = graphql`
         allMarkdownRemark {
             edges {
                 node {
-                  excerpt(pruneLength: 500)
+                  rawMarkdownBody
                   frontmatter {
                     title
                     language
