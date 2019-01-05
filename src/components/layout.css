@@ -89,7 +89,7 @@ a:hover {
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 550px;
+  max-width: 715px;
   flex-direction: column;
 }
 
@@ -101,7 +101,7 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
   width: auto;
-  max-width: 550px;
+  max-width: 715px;
 }
 
 .content .projects .project p {
