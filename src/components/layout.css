@@ -73,11 +73,14 @@ a:hover {
 .content .photo-circle {
   margin-bottom: 20px;
   margin-left: 5px;
-  border-radius: 50%;
   width: 100%;
   max-width: 365px;
   float: right;
   align-self: center;
+}
+
+.content .photo-circle.gatsby-image-wrapper img {
+    border-radius: 50%;
 }
 
 /* Content > Projects */
