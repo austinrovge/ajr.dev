@@ -58,6 +58,7 @@ a:hover {
 /* Content */
 .content {
   overflow-y: auto;
+  max-width: 85em;
 }
 
 .content h1 {
