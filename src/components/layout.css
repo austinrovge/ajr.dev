@@ -165,13 +165,13 @@ a:hover {
 }
 
 /* Content > Photography */
-.content .photo-gallery {
+.content .photos {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
-.content .photo-gallery .photo {
+.content .photos .photo {
     width: 40%;
     height: 40%;
     max-width: 16em;
@@ -179,18 +179,19 @@ a:hover {
     margin-right: 15px;
 }
 
-.content .photo-gallery .photo img {
+.content .photos .photo .gatsby-image-wrapper img {
     border-radius: 0.5em;
 }
 
-.content .photo-gallery .photo h2 {
+.content .photos .photo h2 {
     margin: 0.25em 0 0;
     font-size: 1.25em;
     color: #2377BE;
     transition-duration: 0.2s;
+    text-transform: capitalize;
 }
 
-.content .photo-gallery .photo h2:hover {
+.content .photos .photo h2:hover {
     color: #548EBE;
 }
 
