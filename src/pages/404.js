@@ -8,7 +8,7 @@ export default class NotFoundPage extends Component {
 			<Layout>
 				<SEO title="Not Found" />
 				<h1>Looks like this page doesn't exist.</h1>
-				<p>Hopefully there isn't a broken link somewhere on my site!</p>
+				<p>Hopefully there isn't an old link somewhere!</p>
 			</Layout>
 		)
 	}
