@@ -172,9 +172,7 @@ a:hover {
 }
 
 .content .photos .photo {
-    width: 40%;
-    height: 40%;
-    max-width: 16em;
+    width: 20em;
     margin-bottom: 15px;
     margin-right: 15px;
 }
@@ -199,6 +197,7 @@ a:hover {
   width: 34em;
   max-width: 100%;
   height: 46em;
+  border: 1px rgba(194, 194, 194, 0.5) solid;
 }
 
 /* Footer */
