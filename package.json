@@ -1,29 +1,43 @@
 {
   "name": "austinrovge.me",
   "version": "0.0.1",
-  "description": "This project is a website built using ReactJS and Node.js.",
-  "scripts": {
-    "local": "babel-watch server.js",
-    "build-dev": "webpack --mode development --config ./util/webpack.config.babel.js"
-  },
-  "dependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "babel-watch": "^2.0.7",
-    "express": "^4.16.4",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-router-dom": "^4.3.1",
-    "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2"
-  },
-  "devDependencies": {},
+  "description": "My personal website, built using GatsbyJS.",
   "repository": {
     "type": "git",
     "url": "https://github.com/austinrovge/austinrovge.me.git"
+  },
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "gatsby": "^2.0.75",
+    "gatsby-image": "^2.0.20",
+    "gatsby-plugin-manifest": "^2.0.9",
+    "gatsby-plugin-offline": "^2.0.16",
+    "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-sharp": "^2.0.14",
+    "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-source-graphql": "^2.0.8",
+    "gatsby-transformer-remark": "^2.1.19",
+    "gatsby-transformer-sharp": "^2.1.8",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^4.0.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "dev": "gatsby develop",
+    "build:prod": "gatsby build",
+    "serve": "gatsby serve"
   },
   "author": "Austin Rovge",
   "license": "MIT"

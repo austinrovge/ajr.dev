@@ -1,3 +1,25 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variables file
+.env.api
+
+# Idea folder
 .idea
-node_modules
-src/js/app.js
+
+# gatsby files
+.cache/
+public

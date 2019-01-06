@@ -1,0 +1,268 @@
+/* Standard Styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "system-ui", sans-serif;
+  color: #212121;
+}
+
+body, html {
+  font-size: 1em;
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin-left: 3em;
+  margin-right: 3em;
+  -webkit-text-size-adjust: none;
+}
+
+a {
+  transition-duration: 0.2s;
+  text-decoration: none;
+  color: #2377BE;
+}
+
+a:hover {
+  color: #548EBE;
+}
+
+/* Header */
+.header {
+  border-bottom: 1px rgba(194, 194, 194, 0.5) solid;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header h1 {
+  font-weight: 900;
+  font-size: 3em;
+}
+
+.header .links {
+  margin-top: 10px;
+}
+
+.header .links a {
+  width: auto;
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: 900;
+  margin-right: 15px;
+}
+
+/* Content */
+.content {
+  overflow-y: auto;
+  max-width: 85em;
+}
+
+.content h1 {
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1em;
+  padding-bottom: 15px;
+}
+
+/* Content > About */
+.content .photo-circle {
+  margin-bottom: 20px;
+  margin-left: 5px;
+  width: 100%;
+  max-width: 365px;
+  float: right;
+  align-self: center;
+}
+
+.content .photo-circle.gatsby-image-wrapper img {
+    border-radius: 50%;
+}
+
+/* Content > Projects */
+.content .projects {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 715px;
+  flex-direction: column;
+}
+
+.content .projects .project {
+  height: auto;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 0.9em;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  width: auto;
+  max-width: 715px;
+}
+
+.content .projects .project p {
+  padding-bottom: 10px;
+}
+
+.content .projects .project .language {
+  float: right;
+  border-radius: 0.5em;
+  padding-right: 0.75em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+.content .projects .project .language .text {
+  margin-left: 5px;
+}
+
+.content .projects .project .language .indicator {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin-left: 5px;
+  border: solid 1px rgba(0, 0, 0, 0.15)
+}
+
+/* Content > Projects > Languages */
+.content .projects .project .language .indicator.c { background-color: #555555; }
+
+.content .projects .project .language .indicator.csharp { background-color: #178600; }
+
+.content .projects .project .language .indicator.cplusplus { background-color: #F34B7D; }
+
+.content .projects .project .language .indicator.css { background-color: #563D7C; }
+
+.content .projects .project .language .indicator.dart { background-color: #00B4AB; }
+
+.content .projects .project .language .indicator.html { background-color: #E34C26; }
+
+.content .projects .project .language .indicator.java { background-color: #B07219; }
+
+.content .projects .project .language .indicator.javascript { background-color: #F1E05A; }
+
+.content .projects .project .language .indicator.kotlin { background-color: #F18E33; }
+
+.content .projects .project .language .indicator.python { background-color: #3572A5; }
+
+.content .projects .project .language .indicator.rust { background-color: #DEA584; }
+
+.content .projects .project .language .indicator.swift { background-color: #FFAC45; }
+
+.content .projects .project .language .indicator.typescript { background-color: #2B7489; }
+
+.content .projects .project .language .indicator.vue { background-color: #2C3E50; }
+
+.content .projects .project .language .indicator.webassembly { background-color: #04133B; }
+
+.content .projects .project a {
+  font-weight: 900;
+  font-size: 1.5em;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Content > Photography */
+.content .photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.content .photos .photo {
+    width: 20em;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.content .photos .photo .gatsby-image-wrapper img {
+    border-radius: 0.5em;
+}
+
+.content .photos .photo h2 {
+    margin: 0.25em 0 0;
+    font-size: 1.25em;
+    text-transform: capitalize;
+}
+
+.content .resume {
+  display: inline-block;
+  position: relative;
+}
+
+/* Content > Resume */
+.content object {
+  width: 34em;
+  max-width: 100%;
+  height: 46em;
+  border: 1px rgba(194, 194, 194, 0.5) solid;
+}
+
+/* Footer */
+.footer {
+  background-color: #fff;
+  width: 12em;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  left: 0;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer .mail-icon {
+  margin-top: 3px;
+}
+
+.footer a {
+  transition-duration: 0.2s;
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.footer a:hover {
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+/* Phone Font Styling */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+
+  .content p {
+    font-size: 1.25em;
+  }
+
+  .content .projects .project a {
+    font-size: 1.75em;
+  }
+}
+
+/* Content > Resume */
+@media only screen and (max-width: 440px) {
+  .content object {
+    height: 42em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .content object {
+    height: 35em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .content object {
+    height: 26em;
+  }
+}
