@@ -42,12 +42,7 @@ $ npm run build:prod
 $ npm run serve
 ```
 
-### Future Development
-* ~~Dynamically add projects to project page~~
-* ~~Dynamically add pictures to the photography page~~
-* Create pages for different photo albums
-* ~~Add JSLint to the project~~
-* Update gatsby-config
-* Update directories
-* Serve production files on port 80
-* Convert CSS into SASS
+### Project Development
+The GitHub board for this project can be found [using this link!](https://github.com/austinrovge/austinrovge.me/projects/2)
+
+Future development, current work, and completed tasks can be found here.
