@@ -1,4 +1,4 @@
-# austinrovge.me
+# austinrovge.dev
 This project is my personal site that is built using GatsbyJS.
 
 ### Installation
@@ -22,8 +22,10 @@ Make sure you don't commit the access token to a project repository or share it 
 The inside of the `.env.api` file should have one line like this:
 
 ```
-GITHUB_API_TOKEN=[YOUR API TOKEN GOES HERE WITHOUT THE BRACKETS]
+GITHUB_API_TOKEN=000000000000000
 ```
+
+with the zeros replaced with your access token.
 
 #### Development
 
@@ -43,6 +45,6 @@ $ npm run serve
 ```
 
 ### Project Development
-The GitHub board for this project can be found [using this link!](https://github.com/austinrovge/austinrovge.me/projects/2)
+The GitHub board for this project can be found [using this link!](https://github.com/austinrovge/austinrovge.dev/projects/2)
 
 Future development, current work, and completed tasks can be found here.
