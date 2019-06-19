@@ -12,7 +12,7 @@ $ npm install -g
 
 ### Development
 
-#### GitHub API Key
+#### GitHub Access Token
 Before doing any development, you'll need to make a personal access token from GitHub and add it to a file named `.env.api` in the project root directory.
 
 [Here's steps from GitHub on generating your own personal access token.](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) The token you generate doesn't need to have any extra permissions in order to talk to the GitHub GraphQL API.
@@ -22,10 +22,10 @@ Make sure you don't commit the access token to a project repository or share it 
 The inside of the `.env.api` file should have one line like this:
 
 ```
-GITHUB_API_TOKEN=000000000000000
+ACCESS_TOKEN=12345
 ```
 
-with the zeros replaced with your access token.
+Make sure you replace `12345` with the access token. Ideally the token is more complex than the combination for your luggage.
 
 #### Development
 
