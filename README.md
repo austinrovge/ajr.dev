@@ -45,6 +45,7 @@ $ npm run serve
 ```
 
 ### Project Development
+
 The GitHub board for this project can be found [using this link!](https://github.com/austinrovge/austinrovge.dev/projects/2)
 
 Future development, current work, and completed tasks can be found here.
