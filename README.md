@@ -5,8 +5,8 @@ This project is my personal site that is built using GatsbyJS.
 The project needs to be cloned and the NPM modules need to be installed.
 
 ``` bash
-$ git clone https://github.com/austinrovge/austinrovge.me.git
-$ cd austinrovge.me
+$ git clone https://github.com/austinrovge/austinrovge.dev.git
+$ cd austinrovge.dev
 $ npm install -g
 ```
 
@@ -22,10 +22,10 @@ Make sure you don't commit the access token to a project repository or share it 
 The inside of the `.env.api` file should have one line like this:
 
 ```
-GITHUB_API_TOKEN=000000000000000
+ACCESS_TOKEN=12345
 ```
 
-with the zeros replaced with your access token.
+Make sure you replace `12345` with your access token. Ideally it will be more complex than the combination on your luggage.
 
 #### Development
 
