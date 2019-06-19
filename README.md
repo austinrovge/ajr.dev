@@ -1,12 +1,12 @@
-# austinrovge.me
+# austinrovge.dev
 This project is my personal site that is built using GatsbyJS.
 
 ### Installation
 The project needs to be cloned and the NPM modules need to be installed.
 
 ``` bash
-$ git clone https://github.com/austinrovge/austinrovge.me.git
-$ cd austinrovge.me
+$ git clone https://github.com/austinrovge/austinrovge.dev.git
+$ cd austinrovge.dev
 $ npm install -g
 ```
 
@@ -22,8 +22,10 @@ Make sure you don't commit the access token to a project repository or share it 
 The inside of the `.env.api` file should have one line like this:
 
 ```
-GITHUB_API_TOKEN=[YOUR API TOKEN GOES HERE]
+ACCESS_TOKEN=12345
 ```
+
+Make sure you replace `12345` with your access token. Ideally it will be more complex than the combination on your luggage.
 
 #### Development
 
@@ -42,12 +44,7 @@ $ npm run build:prod
 $ npm run serve
 ```
 
-### Future Development
-* ~~Dynamically add projects to project page~~
-* ~~Dynamically add pictures to the photography page~~
-* Create pages for different photo albums
-* ~~Add JSLint to the project~~
-* Update gatsby-config
-* Update directories
-* Serve production files on port 80
-* Convert CSS into SASS
+### Project Development
+The GitHub board for this project can be found [using this link!](https://github.com/austinrovge/austinrovge.dev/projects/2)
+
+Future development, current work, and completed tasks can be found here.
