@@ -1,18 +1,16 @@
-import React, { Component, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import Header from './header'
 import Footer from './footer'
 import './layout.css'
 
-export default class Layout extends Component {
-  render() {
-    return (
-      <Fragment>
-        <Header/>
-        <main className="content">
-          {this.props.children}
-        </main>
-        <Footer/>
-      </Fragment>
-    )
-  }
+export default function Layout({ children }) {
+  return (
+    <Fragment>
+      <Header/>
+      <main className="content">
+        {children}
+      </main>
+      <Footer/>
+    </Fragment>
+  )
 }
