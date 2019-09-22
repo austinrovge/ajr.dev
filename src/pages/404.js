@@ -1,15 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-export default class NotFoundPage extends Component {
-  render() {
-    return (
-      <Layout>
-        <SEO title="Not Found" />
-        <h1>Looks like this page doesn't exist.</h1>
-        <p>Hopefully there isn't an old link somewhere!</p>
-      </Layout>
-    )
-  }
+export default function NotFound() {
+  return (
+    <Layout>
+      <SEO title="Not Found" />
+      <h1>Looks like this page doesn't exist.</h1>
+      <p>Maybe try going to <Link to="/">the home page?</Link></p>
+    </Layout>
+  )
 }

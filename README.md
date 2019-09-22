@@ -22,7 +22,7 @@ Make sure you don't commit the access token to a project repository or share it 
 The inside of the `.env.api` file should have one line like this:
 
 ```
-ACCESS_TOKEN=12345
+GITHUB_TOKEN=12345
 ```
 
 Make sure you replace `12345` with your access token. Ideally it will be more complex than the combination on your luggage.

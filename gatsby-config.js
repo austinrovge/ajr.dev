@@ -1,3 +1,8 @@
+const fs = require('fs')
+const fetch = require('node-fetch')
+const { buildClientSchema } = require('graphql')
+const { createHttpLink } = require('apollo-link-http')
+
 require('dotenv').config({
   path: '.env.api'
 })
@@ -20,13 +25,21 @@ module.exports = {
     {
       resolve: 'gatsby-source-graphql',
       options: {
-        typeName: 'GitHub',
         fieldName: 'github',
-        url: 'https://api.github.com/graphql',
-        headers: {
-          Authorization: `bearer ${process.env.ACCESS_TOKEN}`
-        }
-      }
+        typeName: 'GitHub',
+        createLink: () =>
+          createHttpLink({
+            uri: 'https://api.github.com/graphql',
+            headers: {
+              Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
+            },
+            fetch,
+          }),
+        createSchema: async () => {
+          const json = JSON.parse(fs.readFileSync(`${__dirname}/github.json`))
+          return buildClientSchema(json.data)
+        },
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
