@@ -5,7 +5,7 @@ This project is my personal site! It's built using GatsbyJS.
 The project needs to be cloned and the node modules need to be installed.
 
 ``` bash
-$ git clone https://gitlab.com/rovge/austinrovge.dev.git
+$ git clone https://github.com/rovge/austinrovge.dev.git
 $ cd austinrovge.dev
 $ yarn
 ```
