@@ -2,44 +2,38 @@
   "name": "austinrovge.dev",
   "version": "0.0.1",
   "description": "My personal website, built using GatsbyJS.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/austinrovge/austinrovge.dev.git"
+  "scripts": {
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
+    "dev": "gatsby develop",
+    "prod": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "apollo-link-http": "^1.5.16",
-    "dotenv": "^6.2.0",
-    "gatsby": "^2.9.7",
-    "gatsby-image": "^2.1.4",
-    "gatsby-plugin-manifest": "^2.1.1",
-    "gatsby-plugin-offline": "^2.1.3",
-    "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-sharp": "^2.1.7",
-    "gatsby-source-filesystem": "^2.0.41",
-    "gatsby-source-graphql": "^2.0.19",
-    "gatsby-transformer-remark": "^2.4.0",
-    "gatsby-transformer-sharp": "^2.1.21",
-    "graphql": "^14.5.7",
+    "gatsby": "^2.18.4",
+    "gatsby-cli": "^2.8.14",
+    "gatsby-image": "^2.2.34",
+    "gatsby-plugin-manifest": "^2.2.30",
+    "gatsby-plugin-offline": "^3.0.24",
+    "gatsby-plugin-react-helmet": "^3.1.16",
+    "gatsby-plugin-sass": "^2.1.24",
+    "gatsby-plugin-sharp": "^2.3.4",
+    "gatsby-source-filesystem": "^2.1.39",
+    "gatsby-source-graphql": "^2.1.25",
+    "gatsby-transformer-remark": "^2.6.38",
+    "gatsby-transformer-sharp": "^2.3.6",
+    "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1"
   },
-  "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.17.3",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-react": "^7.13.0",
-    "eslint-plugin-standard": "^4.0.0"
-  },
-  "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "dev": "gatsby develop",
-    "build:prod": "gatsby build",
-    "serve": "gatsby serve"
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/austinrovge/austinrovge.dev.git"
   },
   "author": "Austin Rovge",
   "license": "MIT"

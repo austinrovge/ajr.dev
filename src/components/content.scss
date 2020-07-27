@@ -1,0 +1,28 @@
+.content {
+    max-width: 54rem;
+    margin: 2em auto 2em auto;
+    padding: 0 1em;
+  
+    a {
+        color: #2377BE;
+  
+        &:hover {
+            color: #548EBE;
+        }
+    }
+  
+    h1 {
+        color: #404040;
+        margin-bottom: 0.5em;
+    }
+  
+    p {
+        padding-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 58em) {
+    .content {
+        max-width: 36rem;
+    }
+}

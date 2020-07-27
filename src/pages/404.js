@@ -1,14 +1,15 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import React from "react";
+import { Link } from "gatsby";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 export default function NotFound() {
-  return (
-    <Layout>
-      <SEO title="Not Found" />
-      <h1>Looks like this page doesn't exist.</h1>
-      <p>Maybe try going to <Link to="/">the home page?</Link></p>
-    </Layout>
-  )
+    return (
+        <Layout>
+            <SEO title="Not Found" />
+            <h1>404s and heartbreaks.</h1>
+            <p>Looks like this page wasn't found.</p>
+            <p>You'll find some great content if you go back to <Link to="/">the about page!</Link></p>
+        </Layout>
+    );
 }

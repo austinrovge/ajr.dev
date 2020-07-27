@@ -14,8 +14,8 @@ node_modules/
 # Optional eslint cache
 .eslintcache
 
-# dotenv environment variables file
-.env.api
+# environment variables file
+.env
 
 # Idea folder
 .idea

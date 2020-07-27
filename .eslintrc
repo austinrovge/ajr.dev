@@ -11,7 +11,8 @@
     "ecmaVersion": 6
   },
   "rules": {
-    "semi": 0,
-    "indent": ["error", 2]
+    "semi": ["error", "always"],
+    "quotes": ["error", "double"],
+    "indent": ["error", 4]
   }
 }
