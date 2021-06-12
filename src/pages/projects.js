@@ -4,7 +4,7 @@ import Project from "../components/project";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-export default function Projects({ data }) {
+export default function Projects({ data: { github: { viewer: { pinnedItems }}, allMarkdownRemark: { edges }}}) {
     return (
         <Layout>
             <SEO title="Projects" />
@@ -13,25 +13,24 @@ export default function Projects({ data }) {
                 <p>This isn't all of my projects that I've worked on, just some that I like!</p>
             </div>
             <div className="projects">
-                {
-                    data.github.user.pinnedRepositories.edges.map(({ node: { url, name, primaryLanguage, description } }, i) => (
-                        <Project key={i}
-                            name={name}
-                            language={primaryLanguage ? primaryLanguage.name : ""}
-                            description={description}
-                        />
-                    ))
-                }
-                {
-                    data.allMarkdownRemark.edges.map(({ node: { rawMarkdownBody, frontmatter: { link, title, language } } }, i) => (
-                        <Project key={i}
-                            url={link}
-                            name={title}
-                            language={language}
-                            description={rawMarkdownBody}
-                        />
-                    ))
-                }
+                {pinnedItems.edges.map(({ node: { url, name, primaryLanguage, description } }, i) => (
+                    <Project
+                        key={i}
+                        href={url}
+                        name={name}
+                        language={primaryLanguage ? primaryLanguage.name : ""}
+                        description={description}
+                    />
+                ))}
+                {edges.map(({ node: { rawMarkdownBody, frontmatter: { link, title, language } } }, i) => (
+                    <Project
+                        key={i}
+                        href={link}
+                        name={title}
+                        language={language}
+                        description={rawMarkdownBody}
+                    />
+                ))}
             </div>
         </Layout>
     );
@@ -53,15 +52,17 @@ export const projectsQuery = graphql`
         }
         
         github {
-            user(login: "austinrovge") {
-                pinnedRepositories(first: 6) {
-                    totalCount
+            viewer {
+                pinnedItems(first: 6) {
                     edges {
                         node {
-                            name
-                            description
-                            primaryLanguage {
+                            ... on GitHub_Repository {
                                 name
+                                url
+                                description
+                                primaryLanguage {
+                                    name
+                                }
                             }
                         }
                     }

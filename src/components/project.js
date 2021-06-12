@@ -7,9 +7,7 @@ const sanitizeLanguage = (language) =>
             .replace("#", "sharp")
             .replace(/\+/g, "plus");
 
-export default function Project({ url, language, name, description }) {
-    const href = url ? url : `https://github.com/austinrovge/${name}`;
-
+export default function Project({ href, language, name, description }) {
     return (
         <div className="project">
             <ExternalAnchorTag {...{href}}>{name}</ExternalAnchorTag>

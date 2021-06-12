@@ -19,12 +19,12 @@ Before doing any development, you'll need to make a personal access token from G
 
 Make sure you don't commit the access token to a project repository or share it anywhere else.
 
-The `.env` file should define an evironment variable called `GITHUB_ACCESS_TOKEN` equal to the value of the token generated above.
+The `.env` file should define an evironment variable called `GITHUB_PERSONAL_ACCESS_TOKEN` equal to the value of the token generated above.
 
 Example:
 
 ```
-GITHUB_ACCESS_TOKEN=12345
+GITHUB_PERSONAL_ACCESS_TOKEN=12345
 ```
 
 Hopefully the access token from GitHub will be more complex than the combination on your luggage.

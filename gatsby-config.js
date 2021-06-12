@@ -53,14 +53,10 @@ module.exports = {
                     createHttpLink({
                         uri: "https://api.github.com/graphql",
                         headers: {
-                            Authorization: `Bearer ${process.env.GITHUB_ACCESS_TOKEN}`,
+                            Authorization: `Bearer ${process.env.GITHUB_PERSONAL_ACCESS_TOKEN}`,
                         },
                         fetch,
-                    }),
-                createSchema: async () => {
-                    const json = JSON.parse(fs.readFileSync(`${__dirname}/github.json`));
-                    return buildClientSchema(json.data);
-                }
+                    })
             }
         }
     ]
