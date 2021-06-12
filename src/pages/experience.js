@@ -7,6 +7,11 @@ import "./experience.scss";
 const experienceItemList = [
     {
         org: "Direct Supply",
+        position: "Software Engineer",
+        description: "This is my first full time job doing full stack development!"
+    },
+    {
+        org: "Direct Supply",
         position: "Software Engineer Intern",
         description: "This was my first internship where I learned a lot about working on an engineering team and about microservices!"
     },

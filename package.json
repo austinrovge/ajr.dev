@@ -1,12 +1,12 @@
 {
-  "name": "austinrovge.dev",
+  "name": "ajr.dev",
   "version": "0.0.1",
   "description": "My personal website, built using GatsbyJS.",
   "scripts": {
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
-    "dev": "gatsby develop",
-    "prod": "gatsby build",
+    "start": "gatsby develop",
+    "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
@@ -33,7 +33,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/austinrovge/austinrovge.dev.git"
+    "url": "https://github.com/austinrovge/ajr.dev.git"
   },
   "author": "Austin Rovge",
   "license": "MIT"

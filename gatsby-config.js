@@ -9,7 +9,7 @@ dotenv.config();
 module.exports = {
     siteMetadata: {
         title: "Austin Rovge",
-        description: "Hi! I'm a software engineering student located in Milwaukee, WI. I'm working hard at learning new skills!",
+        description: "Hi! I'm a software engineer located in Milwaukee, WI. I'm working hard at learning new skills!",
         author: "@austinrovge"
     },
     plugins: [
@@ -53,26 +53,7 @@ module.exports = {
                     createHttpLink({
                         uri: "https://api.github.com/graphql",
                         headers: {
-                            Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-                        },
-                        fetch,
-                    }),
-                createSchema: async () => {
-                    const json = JSON.parse(fs.readFileSync(`${__dirname}/github.json`));
-                    return buildClientSchema(json.data);
-                }
-            }
-        },
-        {
-            resolve: "gatsby-source-graphql",
-            options: {
-                fieldName: "gitlab",
-                typeName: "GitLab",
-                createLink: () =>
-                    createHttpLink({
-                        uri: "https://gitlab.com/api/graphql",
-                        headers: {
-                            Authorization: `Bearer ${process.env.GITLAB_TOKEN}`,
+                            Authorization: `Bearer ${process.env.GITHUB_ACCESS_TOKEN}`,
                         },
                         fetch,
                     }),
