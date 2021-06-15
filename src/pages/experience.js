@@ -30,9 +30,7 @@ export default function Experience() {
             <p>Here's a direct <a href="/resume.pdf" target="_blank">link to my resume!</a></p>
             <p>Listed below are some positions that are great highlights of my experiences so far!</p>
             <div className="experience-listings">
-                {
-                    experienceItemList.map((props, i) => <ExperienceItem key={i} {...props} />)
-                }
+                {experienceItemList.map((props, i) => <ExperienceItem key={i} {...props} />)}
             </div>
         </Layout>
     );

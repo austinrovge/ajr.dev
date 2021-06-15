@@ -1,6 +1,4 @@
-const fs = require("fs");
 const fetch = require("node-fetch");
-const { buildClientSchema } = require("graphql");
 const { createHttpLink } = require("apollo-link-http");
 const dotenv = require("dotenv");
 
@@ -13,6 +11,7 @@ module.exports = {
         author: "@austinrovge"
     },
     plugins: [
+        `gatsby-plugin-image`,
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-sass",
         "gatsby-plugin-sharp",
@@ -34,7 +33,7 @@ module.exports = {
             resolve: "gatsby-source-filesystem",
             options: {
                 name: "images",
-                path: `${__dirname}/src/images`
+                path: `${__dirname}/images`
             }
         },
         {

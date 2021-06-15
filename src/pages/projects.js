@@ -13,7 +13,7 @@ export default function Projects({ data: { github: { viewer: { pinnedItems }}, a
                 <p>This isn't all of my projects that I've worked on, just some that I like!</p>
             </div>
             <div className="projects">
-                {pinnedItems.edges.map(({ node: { url, name, primaryLanguage, description } }, i) => (
+                {pinnedItems.edges.map(({ node: { url, name, primaryLanguage, description }}, i) => (
                     <Project
                         key={i}
                         href={url}
@@ -22,7 +22,7 @@ export default function Projects({ data: { github: { viewer: { pinnedItems }}, a
                         description={description}
                     />
                 ))}
-                {edges.map(({ node: { rawMarkdownBody, frontmatter: { link, title, language } } }, i) => (
+                {edges.map(({ node: { rawMarkdownBody, frontmatter: { link, title, language }}}, i) => (
                     <Project
                         key={i}
                         href={link}
