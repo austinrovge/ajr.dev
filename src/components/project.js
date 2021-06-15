@@ -1,15 +1,16 @@
 import React from "react";
+import ExternalAnchorTag from "./externalAnchorTag";
 import "./project.scss";
 
 const sanitizeLanguage = (language) =>
-    language.toLowerCase().replace("#", "sharp").replace(/\+/g, "plus");
+    language.toLowerCase()
+            .replace("#", "sharp")
+            .replace(/\+/g, "plus");
 
-export default function Project({ url, language, name, description }) {
-    const link = url ? url : `https://gitlab.com/rovge/${name}`;
-
+export default function Project({ href, language, name, description }) {
     return (
         <div className="project">
-            <a href={link} rel="noopener noreferrer" target="_blank">{name}</a>
+            <ExternalAnchorTag {...{href}}>{name}</ExternalAnchorTag>
             <span className="language">
                 <span className="text">{language}</span>
                 <span className={`indicator ${sanitizeLanguage(language)}`}/>
